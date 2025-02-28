@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kori
+  namespace: devops
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      app: kori
+
+
+  template:
+    metadata:
+      labels:
+        app: kori
+
+    spec:
+      containers:
+        - name: kori
+          image: nginx:latest
+
+
+
