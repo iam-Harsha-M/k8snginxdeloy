@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: kori
-          image: nginx:latest
+          image: httpd:latest
 
 
 
